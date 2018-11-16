@@ -1,0 +1,16 @@
+[Description]
+Name=五笔型
+-----------------------------------------
+词库信息=新世纪版五笔字型超大字符集 by CNMan@github	
+生成日期:2018-10-6 18:00
+-----------------------------------------
+MaxCodes=4
+MaxElement=1
+UsedCodes=abcdefghijklmnopqrstuvwxy
+WildChar=z
+NumRules=3
+[Rule]
+ca4=p11+p21+p31+n11
+ce2=p11+p12+p21+p22
+ce3=p11+p21+p31+p32
+[Text]

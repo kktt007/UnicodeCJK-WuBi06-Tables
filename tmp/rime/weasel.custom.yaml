@@ -1,0 +1,42 @@
+# encoding: utf-8
+
+patch:
+  # 相关选项参考源码：https://github.com/rime/weasel/blob/master/include/WeaselCommon.h
+  style:                                     # 预置界面样式，如字体、字号、横排／直排等
+    color_scheme: cnman
+    preedit_type: composition
+    horizontal: false                        # 橫／直排
+    fullscreen: false                        # 演示模式（全屏的输入窗口）
+    font_face: "中华书局宋体00平面"          # 字體〔小狼毫得且僅得設一個字體；鼠鬚管得設多個字體，後面的字體自動補前面字體不含的字〕
+    font_point: 16                           # 字號，只认数字的，不认「五号」、「小五」这样的
+    inline_preedit: false                    # 内嵌编码（仅支持TSF）
+    display_tray_icon: false                 # 显示托盘图标
+    label_format: "%s."
+    layout:                                  # 窗口布局
+      min_width: 160                         # 宽度
+      min_height: 0                          # 高度
+      border: 0                              # 
+      margin_x: 0                            # 边缘x距
+      margin_y: 0                            # 边缘y距
+      spacing: 1                             # 间距
+      candidate_spacing: 1                   # 候选间距
+      hilite_spacing: 1                      # 第一候选项，间隔
+      hilite_padding: 1                      # 第一候选项，填充
+      round_corner: 0                        # 圆的拐角
+
+  preset_color_schemes:
+    cnman:
+      name: "cnman"
+      author: "cnman"                         # 作者信息
+      text_color: 0x7E7969                    # 拼音行文字颜色
+      candidate_text_color: 0x7E7969          # 预选项文字颜色
+      label_text_color: 0x7E7969              # 
+      comment_text_color: 0x7E7969            # 拼音等提示文字颜色
+      back_color: 0xB7B6B4                    # 候选条背景色，24位色值，16进制，BGR顺序
+      border_color: 0xB7B6B4                  # 边框色
+      hilited_text_color: 0x7E7969            # 高亮拼音 (需要开启内嵌编码)
+      hilited_back_color: 0xB7B6B4            # 第一候选项背景背景色
+      hilited_candidate_text_color: 0xB7B6B4  # 第一候选项文字颜色
+      hilited_candidate_back_color: 0x7E7969  # 高亮候選項的底色，若與背景色不同就會顯出光棒
+      hilited_label_text_color: 0xB7B6B4      # 
+      hilited_comment_text_color: 0xB7B6B4    # 注解文字高亮
